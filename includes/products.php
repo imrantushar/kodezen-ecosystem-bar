@@ -5,7 +5,7 @@
  * Each entry:
  *   name      => Accessible name (used for title / aria-label; the logo itself
  *                carries the wordmark).
- *   url       => Canonical product URL. TODO: replace placeholders with real URLs.
+ *   url       => Canonical product URL.
  *   important => true  => rendered inline in the bar.
  *                false => folded into the "More" dropdown.
  *   logo      => Slug of an SVG file in assets/logos/ (e.g. 'storeengine' =>
@@ -29,50 +29,49 @@ return array(
 	// --- Important: the first-view lineup (rendered inline, in this order) ---
 	array(
 		'name'      => 'Kodezen',
-		'url'       => 'https://kodezen.com',
+		'url'       => 'https://kodezen.com/',
 		'important' => true,
 		'logo'      => 'kodezen',
 	),
 	array(
 		'name'      => 'Academy LMS',
-		'url'       => 'https://kodezen.com/academy',
+		'url'       => 'https://academylms.net/',
 		'important' => true,
 		'logo'      => 'academy',
 	),
 	array(
 		'name'      => 'aBlocks',
-		'url'       => 'https://kodezen.com/ablocks',
+		'url'       => 'https://ablocks.pro/',
 		'important' => true,
 		'logo'      => 'ablocks',
 	),
 	array(
 		'name'      => 'StoreEngine',
-		'url'       => 'https://storeengine.pro',
+		'url'       => 'https://storeengine.pro/',
 		'important' => true,
 		'logo'      => 'storeengine',
 	),
 	array(
 		'name'      => 'ZenCommunity',
-		'url'       => 'https://kodezen.com/zencommunity',
+		'url'       => 'https://zencommunity.pro/',
 		'important' => true,
 		'logo'      => 'zencommunity',
 	),
 	array(
 		'name'      => 'gemCRM',
-		'url'       => 'https://kodezen.com/gemcrm',
+		'url'       => 'https://gemcrm.net/',
 		'important' => true,
 		'logo'      => 'gemcrm',
 	),
-
 	array(
 		'name'      => 'gemBooking',
-		'url'       => 'https://kodezen.com/gembooking',
+		'url'       => 'https://gembooking.net/',
 		'important' => true,
 		'logo'      => 'gembooking',
 	),
 	array(
 		'name'      => 'GameEngine',
-		'url'       => 'https://kodezen.com/gameengine',
+		'url'       => 'https://gameengine.pro/',
 		'important' => true,
 		'logo'      => 'gameengine',
 	),
@@ -80,32 +79,38 @@ return array(
 	// --- Less important: folded into the "More" dropdown ---
 	array(
 		'name'      => 'ECM',
-		'url'       => 'https://kodezen.com/ecm',
+		'url'       => 'https://easycontentmanager.pro/',
 		'important' => false,
 		'logo'      => 'ecm',
 	),
 	array(
 		'name'      => 'GemBoards',
-		'url'       => 'https://kodezen.com/gemboards',
+		'url'       => 'https://gemboards.com/',
 		'important' => false,
 		'logo'      => 'gemboards',
 	),
 	array(
 		'name'      => 'QuizPress',
-		'url'       => 'https://kodezen.com/quizpress',
+		'url'       => 'https://quizpress.pro/',
 		'important' => false,
 		'logo'      => 'quizpress',
 	),
 	array(
 		'name'      => 'Template Kits',
-		'url'       => 'https://kodezen.com/template-kits',
+		'url'       => 'https://template-kits.com/',
 		'important' => false,
 		'logo'      => 'template-kits',
 	),
 	array(
 		'name'      => 'Zaplane',
-		'url'       => 'https://kodezen.com/zaplane',
+		'url'       => 'https://zaplane.app/',
 		'important' => false,
 		'logo'      => 'zaplane',
+	),
+	array(
+		'name'      => 'WP Map Block',
+		'url'       => 'https://wpmapblock.com/',
+		'important' => false,
+		'logo'      => 'wpmapblock', // TODO: add assets/logos/wpmapblock.svg (shows text until then).
 	),
 );
