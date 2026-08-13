@@ -107,10 +107,4 @@ return array(
 		'important' => false,
 		'logo'      => 'zaplane',
 	),
-	array(
-		'name'      => 'WP Map Block',
-		'url'       => 'https://wpmapblock.com/',
-		'important' => false,
-		'logo'      => 'wpmapblock', // TODO: add assets/logos/wpmapblock.svg (shows text until then).
-	),
 );
