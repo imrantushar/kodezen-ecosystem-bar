@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "kodezen/ecosystem-bar",
+	"title": "Kodezen Ecosystem Bar",
+	"category": "widgets",
+	"icon": "grid-view",
+	"description": "A bar linking to the Kodezen ecosystem products. Style the background, height, width and alignment visually.",
+	"keywords": [ "kodezen", "ecosystem", "bar", "logos", "products" ],
+	"textdomain": "kodezen-ecosystem-bar",
+	"editorScript": "keb-block-editor",
+	"supports": {
+		"html": false,
+		"align": [ "wide", "full" ],
+		"multiple": true
+	},
+	"attributes": {
+		"bg": { "type": "string", "default": "#ffffff" },
+		"width": { "type": "string", "default": "full" },
+		"barAlign": { "type": "string", "default": "justify" },
+		"height": { "type": "number", "default": 56 },
+		"newTab": { "type": "boolean", "default": false },
+		"fixed": { "type": "boolean", "default": false },
+		"hoverBg": { "type": "string", "default": "#f0f1f3" },
+		"activeHighlight": { "type": "boolean", "default": true },
+		"activeBg": { "type": "string", "default": "#eef2ff" },
+		"activeIndicator": { "type": "string", "default": "#006bff" },
+		"borderColor": { "type": "string", "default": "#e5e7eb" },
+		"borderWidth": { "type": "number", "default": 1 },
+		"visibility": { "type": "string", "default": "no-mobile" },
+		"moreLabel": { "type": "string", "default": "More" },
+		"moreShowIcon": { "type": "boolean", "default": true },
+		"moreText": { "type": "string", "default": "#141a24" },
+		"moreBg": { "type": "string", "default": "#ffffff" },
+		"moreBorder": { "type": "string", "default": "#d9dce2" },
+		"moreBorderWidth": { "type": "number", "default": 1 },
+		"moreIconColor": { "type": "string", "default": "#006bff" }
+	}
+}
