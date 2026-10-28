@@ -40,6 +40,8 @@ function keb_print_styles() {
 .keb-more>summary:hover,.keb-more[open]>summary{filter:brightness(.96)}
 .keb-more[open] .keb-caret{transform:rotate(180deg)}
 .keb-more .keb-menu a:hover{background:var(--keb-hover,#f3f4f6)}
+.keb-more .keb-menu a.keb-bundle{transition:transform .15s ease,box-shadow .15s ease}
+.keb-more .keb-menu a.keb-bundle:hover{background:linear-gradient(135deg,#005fe6 0%,#4e24e6 55%,#7e18e6 100%)!important;transform:translateY(-1px);box-shadow:0 10px 24px rgba(91,43,255,.36)}
 @media(max-width:781.98px){.keb-bar.keb-hide-mobile{display:none!important}}
 @media(max-width:1023.98px){.keb-bar.keb-desktop-only{display:none!important}}
 </style>
@@ -377,7 +379,7 @@ function keb_build_bar( array $args = array() ) {
 	);
 	$apps_style      = 'display:block;flex:0 0 auto;color:' . $more_ic;
 	$caret_style     = 'display:block;flex:0 0 auto;transition:transform .18s ease;color:' . $more_text;
-	$menu_style      = 'position:absolute;top:calc(100% + 8px);right:0;min-width:230px;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:14px;padding:7px;box-shadow:0 16px 40px rgba(16,24,40,.16);display:flex;flex-direction:column;gap:1px;z-index:100000';
+	$menu_style      = 'position:absolute;top:calc(100% + 8px);right:0;min-width:280px;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:14px;padding:7px;box-shadow:0 16px 40px rgba(16,24,40,.16);display:flex;flex-direction:column;gap:1px;z-index:100000';
 	$head_style      = 'margin:4px 12px 6px;font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#98a1b0';
 
 	// Same tab by default; opt into a new tab with new_tab=yes.
@@ -412,6 +414,17 @@ function keb_build_bar( array $args = array() ) {
 				<svg class="keb-caret" width="11" height="11" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="<?php echo esc_attr( $caret_style ); ?>"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
 			</summary>
 			<div class="keb-menu" style="<?php echo esc_attr( $menu_style ); ?>">
+				<a class="keb-bundle" href="https://store.kodezen.com/product/kodezen-bundle/?utm_source=ecosystem-bar&utm_medium=more-dropdown&utm_campaign=kodezen-bundle" target="_blank" rel="noopener" style="position:relative;overflow:hidden;display:flex;align-items:center;gap:12px;margin:2px 2px 8px;padding:12px 14px;border-radius:11px;text-decoration:none;background:linear-gradient(135deg,#006bff 0%,#5b2bff 55%,#8e1cff 100%);box-shadow:0 6px 18px rgba(91,43,255,.28)">
+					<span aria-hidden="true" style="position:absolute;right:-24px;top:-24px;width:90px;height:90px;border-radius:50%;background:rgba(255,255,255,.08)"></span>
+					<span aria-hidden="true" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;flex:0 0 auto;border-radius:9px;background:rgba(255,255,255,.18);color:#fff">
+						<svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2 3 6.5v11L12 22l9-4.5v-11L12 2Zm0 2.3 6.8 3.4L12 11.1 5.2 7.7 12 4.3Zm-7 5.1 6 3v8.3l-6-3v-8.3Zm8 11.3v-8.3l6-3v8.3l-6 3Z" fill="currentColor"/></svg>
+					</span>
+					<span style="display:flex;flex-direction:column;gap:2px;min-width:0;flex:1 1 auto">
+						<span style="display:flex;align-items:center;gap:7px;font-weight:700;color:#fff;font-size:13px;line-height:1.2">Kodezen Bundle<span style="display:inline-flex;align-items:center;padding:1px 7px;border-radius:999px;background:#ffd84d;color:#1a1300;font-size:10px;font-weight:800;letter-spacing:.04em;text-transform:uppercase">Save</span></span>
+						<span style="color:rgba(255,255,255,.85);font-size:11.5px;line-height:1.35">All 14+ plugins · One license · Lifetime deal</span>
+					</span>
+					<span style="color:#fff;font-size:16px;line-height:1;flex:0 0 auto">→</span>
+				</a>
 				<p class="keb-menu-head" style="<?php echo esc_attr( $head_style ); ?>">Explore the ecosystem</p>
 				<?php
 				foreach ( $more as $idx => $p ) {
