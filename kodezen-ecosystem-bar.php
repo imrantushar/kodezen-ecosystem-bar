@@ -3,7 +3,7 @@
  * Plugin Name:       Kodezen Ecosystem Bar
  * Plugin URI:        https://kodezen.com
  * Description:        Lightweight bar linking to the Kodezen ecosystem products. Shortcode + Gutenberg block; inline styles, no external requests.
- * Version:           1.1.7
+ * Version:           1.1.8
  * Requires at least: 5.9
  * Requires PHP:      7.4
  * Author:            Kodezen
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'KEB_VERSION', '1.1.7' );
+define( 'KEB_VERSION', '1.1.8' );
 define( 'KEB_PATH', plugin_dir_path( __FILE__ ) );
 define( 'KEB_URL', plugin_dir_url( __FILE__ ) );
 
