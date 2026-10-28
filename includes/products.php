@@ -109,7 +109,7 @@ return array(
 	),
 	array(
 		'name'      => 'TruePlayer',
-		'url'       => 'https://trueplayer.pro/',
+		'url'       => 'https://true-player.net/',
 		'important' => false,
 		'logo'      => 'trueplayer',
 	),
