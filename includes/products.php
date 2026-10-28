@@ -107,4 +107,22 @@ return array(
 		'important' => false,
 		'logo'      => 'zaplane',
 	),
+	array(
+		'name'      => 'TruePlayer',
+		'url'       => 'https://trueplayer.pro/',
+		'important' => false,
+		'logo'      => 'trueplayer',
+	),
+	array(
+		'name'      => 'WP Map Block',
+		'url'       => 'https://wpmapblock.com/',
+		'important' => false,
+		'logo'      => 'wp-map-block',
+	),
+	array(
+		'name'      => 'ZenAppBuilder',
+		'url'       => 'https://zenappbuilder.com/',
+		'important' => false,
+		'logo'      => 'zenappbuilder',
+	),
 );
