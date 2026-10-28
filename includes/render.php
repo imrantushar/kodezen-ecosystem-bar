@@ -408,6 +408,7 @@ function keb_build_bar( array $args = array() ) {
 				<svg class="keb-apps" width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="<?php echo esc_attr( $apps_style ); ?>"><rect x="0" y="0" width="6" height="6" rx="1.6" fill="currentColor"/><rect x="9" y="0" width="6" height="6" rx="1.6" fill="currentColor"/><rect x="0" y="9" width="6" height="6" rx="1.6" fill="currentColor"/><rect x="9" y="9" width="6" height="6" rx="1.6" fill="currentColor"/></svg>
 				<?php endif; ?>
 				<span><?php echo esc_html( $more_label ); ?></span>
+				<span class="keb-more-count" style="display:inline-flex;align-items:center;justify-content:center;min-width:18px;height:18px;padding:0 6px;border-radius:999px;background:<?php echo esc_attr( $more_ic ); ?>;color:#fff;font-size:11px;font-weight:700;line-height:1"><?php echo esc_html( (string) count( $more ) ); ?></span>
 				<svg class="keb-caret" width="11" height="11" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="<?php echo esc_attr( $caret_style ); ?>"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
 			</summary>
 			<div class="keb-menu" style="<?php echo esc_attr( $menu_style ); ?>">
