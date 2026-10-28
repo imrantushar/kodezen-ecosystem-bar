@@ -421,7 +421,7 @@ function keb_build_bar( array $args = array() ) {
 					</span>
 					<span style="display:flex;flex-direction:column;gap:2px;min-width:0;flex:1 1 auto">
 						<span style="display:flex;align-items:center;gap:7px;font-weight:700;color:#fff;font-size:13px;line-height:1.2">Kodezen Bundle<span style="display:inline-flex;align-items:center;padding:1px 7px;border-radius:999px;background:#ffd84d;color:#1a1300;font-size:10px;font-weight:800;letter-spacing:.04em;text-transform:uppercase">Save</span></span>
-						<span style="color:rgba(255,255,255,.85);font-size:11.5px;line-height:1.35">All 14 plugins · One license · Lifetime deal</span>
+						<span style="color:rgba(255,255,255,.85);font-size:11.5px;line-height:1.35">All 14+ plugins · One license · Lifetime deal</span>
 					</span>
 					<span style="color:#fff;font-size:16px;line-height:1;flex:0 0 auto">→</span>
 				</a>
